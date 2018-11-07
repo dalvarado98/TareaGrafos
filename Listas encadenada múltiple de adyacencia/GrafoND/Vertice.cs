@@ -7,7 +7,16 @@ using System.Threading.Tasks;
 namespace GrafoND
 {
    public class Vertice
-    {
-        public TYPE Type { get; set; }
+   {
+       private int Dato;
+       private List<Vertice> Lsucesores;
+       private List<Vertice> Lpredecesores;
+
+        public Vertice(int pDato)
+        {
+            Dato = pDato;
+            Lsucesores = new List<Vertice>();
+            Lpredecesores = new List<Vertice>();
+        }
     }
 }
