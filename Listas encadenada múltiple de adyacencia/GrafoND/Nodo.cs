@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace GrafoND
 {
-  public  class Nodo
+  public  class Nodo 
     {
         public int Dato { get; set; }
-        public Nodo Anterior { get; set; }
-        public Nodo Siguiente { get; set; }
+        public Nodo siguienteNodo { get; set; }
 
-        public Nodo()
+        public Nodo(int pdato)
         {
-            this.Dato = 0;
-            this.Siguiente = null;
-            this.Anterior = null;
+            Dato = pdato;
+            siguienteNodo = null;
         }
     }
 }

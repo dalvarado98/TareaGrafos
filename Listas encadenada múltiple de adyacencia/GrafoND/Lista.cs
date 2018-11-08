@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 namespace GrafoND
 {
    public class Lista
-    {
-        private Nodo Cabezera;
-        private Nodo Ultimo;
+   {
+       private NodoLista Cabecera;
+       private NodoLista Ultimo;
 
         public Lista()
         {
-            Cabezera = new Nodo();
-            Ultimo = new Nodo();
+            Cabecera = null;
+            Ultimo = null;
         }
+
+    
     }
 }

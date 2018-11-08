@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace GrafoND
 {
-   public class Vertice
+   public class Vertice:Nodo
    {
-       private int Dato;
-       private List<Vertice> Lsucesores;
-       private List<Vertice> Lpredecesores;
+       public Vertice siguienteVertice { get; set; }
+       public Lista Lpredecesores { get; set; }
+       public Lista Lsucesores { get; set; }
 
-        public Vertice(int pDato)
-        {
-            Dato = pDato;
-            Lsucesores = new List<Vertice>();
-            Lpredecesores = new List<Vertice>();
-        }
-    }
+        public Vertice(int pdato) : base(pdato)
+       {
+           siguienteVertice = null;
+           Lpredecesores = null;
+           Lsucesores = null;
+
+       }
+
+}
 }
