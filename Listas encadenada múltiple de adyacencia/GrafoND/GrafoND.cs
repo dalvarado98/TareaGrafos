@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GrafoND
 {
-   public class GrafoND
+   public class GrafoND:IGrafos
    {
        
        private Vertice Cabecera;
@@ -19,10 +19,10 @@ namespace GrafoND
             Ultimo = null;
         }
 
-       public void InsertarVertice(int pdatoVertice)
-       {
 
-            Vertice NuevoVertice = new Vertice(pdatoVertice);
+       public void insertarVertice(int pdatoVertice)
+       {
+           Vertice NuevoVertice = new Vertice(pdatoVertice);
            if (Cabecera != null)
            {
                Ultimo.siguienteVertice = NuevoVertice;
@@ -34,10 +34,12 @@ namespace GrafoND
                Cabecera = NuevoVertice;
                Cabecera.siguienteVertice = null;
                Ultimo = NuevoVertice;
-
-
            }
         }
 
-    }
+       public void insertarArco(int pArco)
+       {
+           throw new NotImplementedException();
+       }
+   }
 }

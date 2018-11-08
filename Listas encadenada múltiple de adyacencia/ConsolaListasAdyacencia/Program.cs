@@ -11,10 +11,10 @@ namespace ConsolaListasAdyacencia
        public static GrafoND.GrafoND GrafoND = new GrafoND.GrafoND();
         static void Main(string[] args)
         {
-            GrafoND.InsertarVertice(1);
-            GrafoND.InsertarVertice(2);
-            GrafoND.InsertarVertice(3);
-            GrafoND.InsertarVertice(4);
+            GrafoND.insertarVertice(1);
+            GrafoND.insertarVertice(2);
+            GrafoND.insertarVertice(3);
+            GrafoND.insertarVertice(4);
 
         }
     }
