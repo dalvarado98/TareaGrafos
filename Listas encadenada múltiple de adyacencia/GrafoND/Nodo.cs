@@ -9,12 +9,12 @@ namespace GrafoND
   public  class Nodo 
     {
         public int Dato { get; set; }
-        public Nodo siguienteNodo { get; set; }
+        
 
         public Nodo(int pdato)
         {
             Dato = pdato;
-            siguienteNodo = null;
+          
         }
     }
 }

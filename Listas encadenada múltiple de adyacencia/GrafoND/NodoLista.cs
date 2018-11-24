@@ -10,11 +10,13 @@ namespace GrafoND
     {
        
         public NodoLista anterior { get; set; }
+        public NodoLista siguiente { get; set; }
 
 
         public NodoLista(int pdato) : base(pdato)
         {
             anterior = null;
+            siguiente = null;
         }
     }
 }
