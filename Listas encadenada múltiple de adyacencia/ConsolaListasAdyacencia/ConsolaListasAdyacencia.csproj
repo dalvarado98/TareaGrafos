@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GrafoND\GrafoND.csproj">
+    <ProjectReference Include="..\GrafoND\ListaMultiple.csproj">
       <Project>{177e82ef-0c61-4a75-b35b-6c20e7e19a77}</Project>
-      <Name>GrafoND</Name>
+      <Name>ListaMultiple</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

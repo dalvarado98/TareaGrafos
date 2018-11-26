@@ -9,16 +9,30 @@ namespace GrafoND
    public class Vertice:Nodo
    {
        public Vertice siguienteVertice { get; set; }
-       public Lista Lpredecesores { get; set; }
-       public Lista Lsucesores { get; set; }
+       public Arista arcoPredecesor { get; set; }
+       public Arista arcoSucesor { get; set; }
+       public bool EsSucesor { get; set; }
+       public bool EsVisit { get; set; }
 
-        public Vertice(int pdato) : base(pdato)
+
+
+
+        public Vertice(String pdato) : base(pdato)
        {
            siguienteVertice = null;
-           Lpredecesores = null;
-           Lsucesores = null;
-
+            arcoPredecesor = null;
+            arcoSucesor = null;
+           EsSucesor = false;
+           EsVisit = false;
        }
+
+       public Vertice( string pdato, bool esSucesor) : base(pdato)
+        {
+           Dato = pdato;
+            EsSucesor = esSucesor;
+
+
+        }
 
 }
 }

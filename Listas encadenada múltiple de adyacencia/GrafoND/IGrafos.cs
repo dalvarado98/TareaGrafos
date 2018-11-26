@@ -8,8 +8,8 @@ namespace GrafoND
 {
    public interface IGrafos
    {
-      void insertarVertice(int pdatoVertice);
-      void insertarArco(int pArco);
+      void insertarVertice(string pdatoVertice);
+      void insertarArco(Vertice puntoA,Vertice puntoB, int peso);
 
    }
 }

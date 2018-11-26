@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace GrafoND
 {
-    public class Arista : Nodo
+    public class Arista 
     {
-        private Arista verticeA;
-        private Arista verticeB;
-        private int peso;
+        public Vertice PuntoA { get; set; }
+        public Arista arcoPredecesor { get; set; }
+        public Arista arcoSucesor { get; set; }
+        public Vertice puntoB { get; set; }
+        public int peso { get; set; }
 
-        public Arista(int pdato) : base(pdato)
+        public Arista(Vertice pPuntoA, Vertice pPuntoB, int pPeso)
         {
-            verticeA = null;
-            verticeB = null;
-            peso = 0;
+            PuntoA = pPuntoA;
+            puntoB = pPuntoB;
+            peso = pPeso;
         }
-
     }
 }

@@ -13,7 +13,7 @@ namespace GrafoND
         public NodoLista siguiente { get; set; }
 
 
-        public NodoLista(int pdato) : base(pdato)
+        public NodoLista(string pdato) : base(pdato)
         {
             anterior = null;
             siguiente = null;

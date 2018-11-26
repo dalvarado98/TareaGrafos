@@ -8,10 +8,10 @@ namespace GrafoND
 {
   public  class Nodo 
     {
-        public int Dato { get; set; }
+        public String Dato { get; set; }
         
 
-        public Nodo(int pdato)
+        public Nodo(String pdato)
         {
             Dato = pdato;
           
